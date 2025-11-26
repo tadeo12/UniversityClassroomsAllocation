@@ -7,6 +7,8 @@ class EnoughCapacityEvaluator(BaseEvaluator):
     def evaluate(self, allocation):
         penalty = 0
         for resource, commission in allocation.items():
+            if commission is None:
+                continue
             penalty += max(0, commission.students - resource.classroom.capacity)
         return penalty
     

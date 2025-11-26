@@ -4,6 +4,8 @@ from collections import defaultdict
 def groupByCommission(allocation):
     resourcesByCommission = defaultdict(list)
     for resource, commission in allocation.items():
+        if commission is None:
+            continue
         resourcesByCommission[commission].append(resource)
     return resourcesByCommission
 

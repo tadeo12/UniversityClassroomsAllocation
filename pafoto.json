@@ -1,0 +1,555 @@
+{
+    "places": [{"name": "Palihue"}, {"name": "Alem"}, {"name": "DCIC"}, {"name": "Agronomia"}, {"name": "UTN"}],
+    "teachers": [
+        {"name": "profesor 1"},
+        {"name": "profesor 2"},
+        {"name": "profesor 3"},
+        {"name": "profesor 4"},
+        {"name": "profesor 5"},
+        {"name": "profesor 6"},
+        {"name": "profesor 7"},
+        {"name": "profesor 8"},
+        {"name": "profesor 9"},
+        {"name": "profesor 10"},
+        {"name": "profesor 11"},
+        {"name": "profesor 12"},
+        {"name": "profesor 13"},
+        {"name": "profesor 14"},
+        {"name": "profesor 15"},
+        {"name": "profesor 16"},
+        {"name": "profesor 17"},
+        {"name": "profesor 18"},
+        {"name": "profesor 19"},
+        {"name": "profesor 20"},
+        {"name": "profesor 21"},
+        {"name": "profesor 22"},
+        {"name": "profesor 23"},
+        {"name": "profesor 24"}
+    ],
+    "subjects": [
+        {"name": "Resolución de Problemas y Algoritmos"},
+        {"name": "Teoría de la Computabilidad"},
+        {"name": "Estructuras de Datos"},
+        {"name": "IPOO"},
+        {"name": "Lenguajes Formales y Autómatas"},
+        {"name": "Requerimientos de Sistemas"},
+        {"name": "Lenguajes de Programación"},
+        {"name": "Lógica para Ciencias de la Computación"},
+        {"name": "Gestión de Calidad en el Software"},
+        {"name": "Sistemas Distribuidos"},
+        {"name": "Algoritmos y Complejidad"},
+        {"name": "Diseño y Desarrollo de Software"},
+        {"name": "Análisis y Diseño de Sistemas"},
+        {"name": "Arquitectura de Computadoras"},
+        {"name": "Arquitectura de Computadoras para Ingeniería"},
+        {"name": "Redes y Teleprocesamiento"},
+        {"name": "Redes de Computadoras"},
+        {"name": "Computación Gráfica"},
+        {"name": "Ingeniería de Aplicaciones Web"},
+        {"name": "Seguridad en Sistemas"},
+        {"name": "Arquitectura y Diseño de Sistemas"},
+        {"name": "Organización de Computadoras"}
+    ],
+    "classrooms": [
+        {
+            "name": "Aula 6",
+            "capacity": 233,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [1, 0],
+                [1, 1],
+                [1, 2],
+                [1, 3]
+            ]
+        },
+        {
+            "name": "Aula 7",
+            "capacity": 235,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [4, 0],
+                [4, 1],
+                [4, 2],
+                [4, 3]
+            ]
+        },
+        {
+            "name": "Aula 8",
+            "capacity": 147,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [0, 0],
+                [0, 1],
+                [0, 2],
+                [0, 3],
+                [1, 0],
+                [1, 1],
+                [1, 2],
+                [1, 3],
+                [1, 6],
+                [1, 7],
+                [1, 8],
+                [1, 9],
+                [3, 0],
+                [3, 1],
+                [3, 2],
+                [3, 3],
+                [3, 6],
+                [3, 7],
+                [3, 8],
+                [3, 9],
+                [2, 6],
+                [2, 7],
+                [2, 8],
+                [2, 9]
+            ]
+        },
+        {
+            "name": "Aula S1",
+            "capacity": 160,
+            "place": "Alem",
+            "availableTimeSlots": [
+                [3, 6],
+                [3, 7],
+                [3, 8],
+                [3, 9]
+            ]
+        },
+        {
+            "name": "Aula 5",
+            "capacity": 100,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [1, 6],
+                [1, 7],
+                [1, 8],
+                [1, 9],
+                [1, 10],
+                [1, 11]
+            ]
+        },
+        {
+            "name": "Aula 116 (ex 38 c)",
+            "capacity": 150,
+            "place": "Alem",
+            "availableTimeSlots": [
+                [4, 10],
+                [4, 11],
+                [4, 12],
+                [4, 13]
+            ]
+        },
+        {
+            "name": "Aula 16",
+            "capacity": 90,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [2, 0],
+                [2, 1],
+                [2, 2],
+                [2, 3],
+                [3, 6],
+                [3, 7],
+                [3, 8],
+                [3, 9],
+                [1, 0],
+                [1, 1],
+                [1, 2],
+                [1, 3]
+            ]
+        },
+        {
+            "name": "Aula 2 agro",
+            "capacity": 150,
+            "place": "Agronomia",
+            "availableTimeSlots": [
+                [0, 6],
+                [0, 7],
+                [0, 8],
+                [0, 9],
+                [4, 0],
+                [4, 1],
+                [4, 2],
+                [4, 3],
+                [1, 0],
+                [1, 1],
+                [1, 2],
+                [1, 3]
+            ]
+        },
+        {
+            "name": "Aula 2",
+            "capacity": 160,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [4, 0],
+                [4, 1],
+                [4, 2],
+                [4, 3]
+            ]
+        },
+        {
+            "name": "Aula 11",
+            "capacity": 70,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [0, 8],
+                [0, 9],
+                [0, 10],
+                [0, 11],
+                [4, 8],
+                [4, 9],
+                [4, 10],
+                [4, 11]
+            ]
+        },
+        {
+            "name": "Aula 10",
+            "capacity": 70,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [2, 8],
+                [2, 9],
+                [2, 10],
+                [2, 11]
+            ]
+        },
+        {"name": "Aula 1", "capacity": 1600, "place": "DCIC"},
+        {"name": "LP005", "capacity": 50, "place": "DCIC"},
+        {
+            "name": "Aula 13",
+            "capacity": 70,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [0, 0],
+                [0, 1],
+                [0, 2],
+                [0, 3],
+                [1, 6],
+                [1, 7],
+                [1, 8],
+                [1, 9],
+                [3, 6],
+                [3, 7],
+                [3, 8],
+                [3, 9],
+                [2, 10],
+                [2, 11],
+                [2, 12],
+                [2, 13]
+            ]
+        },
+        {"name": "LP004", "capacity": 50, "place": "DCIC"},
+        {"name": "LP001", "capacity": 50, "place": "DCIC"},
+        {
+            "name": "Aula 4",
+            "capacity": 100,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [1, 0],
+                [1, 1],
+                [1, 2],
+                [1, 3]
+            ]
+        },
+        {"name": "Aula 9", "capacity": 140, "place": "Palihue"},
+        {
+            "name": "Aula 12",
+            "capacity": 70,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [0, 0],
+                [0, 1],
+                [0, 2],
+                [0, 3],
+                [2, 0],
+                [2, 1],
+                [2, 2],
+                [2, 3]
+            ]
+        },
+        {
+            "name": "Aula 1005",
+            "capacity": 80,
+            "place": "UTN",
+            "availableTimeSlots": [
+                [0, 6],
+                [0, 7],
+                [0, 8],
+                [0, 9]
+            ]
+        },
+        {
+            "name": "Aula 1",
+            "capacity": 175,
+            "place": "Agronomia",
+            "availableTimeSlots": [
+                [3, 0],
+                [3, 1],
+                [3, 2],
+                [3, 3]
+            ]
+        },
+        {
+            "name": "Aula 3",
+            "capacity": 100,
+            "place": "Palihue",
+            "availableTimeSlots": [
+                [0, 0],
+                [0, 1],
+                [0, 2],
+                [0, 3],
+                [3, 0],
+                [3, 1],
+                [3, 2],
+                [3, 3]
+            ]
+        }
+    ],
+
+    "commissions": [
+        {
+            "name": "RPA A-F",
+            "teacher": "profesor 1",
+            "subject": "Resolución de Problemas y Algoritmos",
+            "students": 182,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "RPA G-N",
+            "teacher": "profesor 2",
+            "subject": "Resolución de Problemas y Algoritmos",
+            "students": 154,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "RPA O-Z",
+            "teacher": "profesor 3",
+            "subject": "Resolución de Problemas y Algoritmos",
+            "students": 137,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "TdC",
+            "teacher": "profesor 4",
+            "subject": "Teoría de la Computabilidad",
+            "students": 172,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "ED A-K",
+            "teacher": "profesor 5",
+            "subject": "Estructuras de Datos",
+            "students": 86,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "ED L-Z",
+            "teacher": "profesor 6",
+            "subject": "Estructuras de Datos",
+            "students": 88,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "IPOO",
+            "teacher": "profesor 7",
+            "subject": "IPOO",
+            "students": 141,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "LFyA",
+            "teacher": "profesor 8",
+            "subject": "Lenguajes Formales y Autómatas",
+            "students": 130,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "Req",
+            "teacher": "profesor 9",
+            "subject": "Requerimientos de Sistemas",
+            "students": 151,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "LdP",
+            "teacher": "profesor 10",
+            "subject": "Lenguajes de Programación",
+            "students": 24,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "Log",
+            "teacher": "profesor 11",
+            "subject": "Lógica para Ciencias de la Computación",
+            "students": 199,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "GCS",
+            "teacher": "profesor 12",
+            "subject": "Gestión de Calidad en el Software",
+            "students": 43,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "SD",
+            "teacher": "profesor 13",
+            "subject": "Sistemas Distribuidos",
+            "students": 6,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "AyC",
+            "teacher": "profesor 14",
+            "subject": "Algoritmos y Complejidad",
+            "students": 119,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "DDS",
+            "teacher": "profesor 15",
+            "subject": "Diseño y Desarrollo de Software",
+            "students": 28,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "AnDS",
+            "teacher": "profesor 16",
+            "subject": "Análisis y Diseño de Sistemas",
+            "students": 54,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "AdC",
+            "teacher": "profesor 17",
+            "subject": "Arquitectura de Computadoras",
+            "students": 204,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "ACI",
+            "teacher": "profesor 17",
+            "subject": "Arquitectura de Computadoras para Ingeniería",
+            "students": 14,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "RyT",
+            "teacher": "profesor 18",
+            "subject": "Redes y Teleprocesamiento",
+            "students": 9,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "RdC",
+            "teacher": "profesor 19",
+            "subject": "Redes de Computadoras",
+            "students": 76,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "CG",
+            "teacher": "profesor 20",
+            "subject": "Computación Gráfica",
+            "students": 11,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "IAW",
+            "teacher": "profesor 21",
+            "subject": "Ingeniería de Aplicaciones Web",
+            "students": 76,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "SS",
+            "teacher": "profesor 22",
+            "subject": "Seguridad en Sistemas",
+            "students": 6,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "ArDS",
+            "teacher": "profesor 23",
+            "subject": "Arquitectura y Diseño de Sistemas",
+            "students": 64,
+            "hoursPerWeek": 8
+        },
+        {
+            "name": "OC",
+            "teacher": "profesor 24",
+            "subject": "Organización de Computadoras",
+            "students": 50,
+            "hoursPerWeek": 8
+        }
+    ],
+    "groups": [
+        {"name": "1er año ISS A-F"},
+        {"name": "1er año LCC A-F"},
+        {"name": "1er año IC A-F"},
+        {"name": "1er año ISS G-N"},
+        {"name": "1er año LCC G-N"},
+        {"name": "1er año IC G-N"},
+        {"name": "1er año ISS O-Z"},
+        {"name": "1er año LCC O-Z"},
+        {"name": "1er año IC O-Z"},
+        {"name": "2do año ISS A-K"},
+        {"name": "2do año LCC A-K"},
+        {"name": "2do año IC A-K"},
+        {"name": "2do año ISS L-Z"},
+        {"name": "2do año LCC L-Z"},
+        {"name": "2do año IC L-Z"},
+        {"name": "3er año ISS"},
+        {"name": "3er año LCC"},
+        {"name": "3er año IC"},
+        {"name": "4to año ISS"},
+        {"name": "4to año LCC"},
+        {"name": "4to año IC"},
+        {"name": "5to año ISS"},
+        {"name": "5to año LCC"},
+        {"name": "5to año IC"}
+    ],
+    "commissions_groups": [
+        {"commission": "RPA A-F", "group": "1er año ISS A-F"},
+        {"commission": "RPA A-F", "group": "1er año LCC A-F"},
+        {"commission": "RPA A-F", "group": "1er año IC A-F"},
+        {"commission": "RPA G-N", "group": "1er año ISS G-N"},
+        {"commission": "RPA G-N", "group": "1er año LCC G-N"},
+        {"commission": "RPA G-N", "group": "1er año IC G-N"},
+        {"commission": "RPA O-Z", "group": "1er año ISS O-Z"},
+        {"commission": "RPA O-Z", "group": "1er año LCC O-Z"},
+        {"commission": "RPA O-Z", "group": "1er año IC O-Z"},
+        {"commission": "ED A-K", "group": "2do año ISS A-K"},
+        {"commission": "ED A-K", "group": "2do año LCC A-K"},
+        {"commission": "ED A-K", "group": "2do año IC A-K"},
+        {"commission": "ED L-Z", "group": "2do año ISS L-Z"},
+        {"commission": "ED L-Z", "group": "2do año LCC L-Z"},
+        {"commission": "ED L-Z", "group": "2do año IC L-Z"},
+        {"commission": "TdC", "group": "2do año IC A-K"},
+        {"commission": "TdC", "group": "2do año IC L-Z"},
+        {"commission": "TdC", "group": "2do año LCC A-K"},
+        {"commission": "TdC", "group": "2do año LCC L-Z"},
+        {"commission": "TdC", "group": "2do año ISS A-K"},
+        {"commission": "TdC", "group": "2do año ISS L-Z"},
+        {"commission": "Req", "group": "3er año ISS"},
+        {"commission": "Log", "group": "3er año ISS"},
+        {"commission": "Log", "group": "3er año LCC"},
+        {"commission": "AdC", "group": "3er año ISS"},
+        {"commission": "AdC", "group": "3er año LCC"},
+        {"commission": "AnDS", "group": "3er año LCC"},
+        {"commission": "ACI", "group": "3er año IC"},
+        {"commission": "IAW", "group": "4to año ISS"},
+        {"commission": "IAW", "group": "5to año LCC"},
+        {"commission": "AyC", "group": "4to año ISS"},
+        {"commission": "AyC", "group": "5to año LCC"},
+        {"commission": "DDS", "group": "4to año LCC"},
+        {"commission": "LdP", "group": "4to año LCC"},
+        {"commission": "RdC", "group": "4to año LCC"},
+        {"commission": "RdC", "group": "5to año ISS"},
+        {"commission": "CG", "group": "4to año IC"},
+        {"commission": "RyT", "group": "4to año IC"},
+        {"commission": "GCS", "group": "5to año ISS"},
+        {"commission": "SD", "group": "5to año IC"}
+    ]
+}

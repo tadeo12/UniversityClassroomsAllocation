@@ -12,6 +12,8 @@ def generateNeighbor(allocation: dict):
     return neighbor 
 
 def simulatedAnnealing(initialAllocation: dict, progressCallback = None):
+
+    print(str(evaluate(initialAllocation)))
     config = ConfigManager().getConfig()   
     maxI = config["max_iterations"]
     solution = initialAllocation
@@ -39,13 +41,15 @@ def simulatedAnnealing(initialAllocation: dict, progressCallback = None):
         difference = candidateEvaluation[0] - currentCost
         if difference < 0:
             current = candidate
-            solution= candidate
             currentCost= candidateEvaluation[0]
-            solutionCost= currentCost
             currentCostsByConstraint=candidateEvaluation[1]
-            solutionCostsByConstraint=currentCostsByConstraint
             iterationsWithoutImprove = 0
             iterationsWithoutChanges = 0
+
+            if currentCost < solutionCost:
+                solution = candidate
+                solutionCost = currentCost
+                solutionCostsByConstraint = currentCostsByConstraint
 
         elif math.exp(-difference/temperature) > random.random():
             current = candidate
@@ -58,7 +62,6 @@ def simulatedAnnealing(initialAllocation: dict, progressCallback = None):
 
         maxWithoutImprove = max(maxWithoutImprove, iterationsWithoutImprove)
         maxWithoutChanges = max(maxWithoutChanges, iterationsWithoutChanges)
-        print(temperature)
         temperature = cool(temperature, i)
 
         if progressCallback and i % checkpoint == 0:

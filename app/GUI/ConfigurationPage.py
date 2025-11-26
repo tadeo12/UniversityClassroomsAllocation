@@ -25,25 +25,38 @@ def move_constraint(file, source_folder, target_folder):
 
 def ConfigurationPage():
     st.subheader("Configuración del algoritmo")
-    st.write("Modificar solo si sabes lo que estás haciendo.")
 
     config = configManager.getConfig()
     newConfig = {}
 
     for key, value in config.items():
+
+        # --- INT ---
         if isinstance(value, int):
             newConfig[key] = st.number_input(f"{key}", value=value, step=1)
+
+        # --- FLOAT con precisión arbitraria ---
         elif isinstance(value, float):
-            if key == "temperature_reduction_coefficient":
-                newConfig[key] = st.number_input(
-                    f"{key}", value=value, step=0.00000000000001, format="%.16f"
-                )
-            else:
-                newConfig[key] = st.number_input(
-                    f"{key}", value=value, step=0.01
-                )
+            # lo muestro tal cual está en el archivo, sin formato
+            default_str = str(value)
+
+            user_input = st.text_input(f"{key}", value=default_str)
+
+            # Permitir coma o punto como separador decimal
+            normalized = user_input.replace(",", ".")
+
+            try:
+                parsed = float(normalized)
+                newConfig[key] = parsed
+            except ValueError:
+                st.error(f"El valor de '{key}' debe ser un número flotante válido")
+                newConfig[key] = value  # fallback para no romper
+
+        # --- BOOL ---
         elif isinstance(value, bool):
             newConfig[key] = st.checkbox(f"{key}", value=value)
+
+        # --- STRING ---
         else:
             newConfig[key] = st.text_input(f"{key}", value=str(value))
 

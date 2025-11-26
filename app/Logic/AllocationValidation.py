@@ -31,6 +31,6 @@ def enoughtHoursValidation(commission_count):
         if count * hoursPerResource != commission.hours:
             raise InvalidAllocationError(
                 f"La comisión {commission} está asignada a {count} recursos, "
-                f"pero requiere exactamente {commission.hour / hoursPerResource}."
+                f"pero requiere exactamente {commission.hours / hoursPerResource}."
             )
 

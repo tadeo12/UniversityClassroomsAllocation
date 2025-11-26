@@ -7,6 +7,8 @@ import streamlit as st
 def groupByCommission(allocation):
         resourcesByCommission = defaultdict(list)
         for resource, commission in allocation.items():
+            if commission is None:
+                continue
             resourcesByCommission[commission].append(resource)
         return resourcesByCommission
 
@@ -23,23 +25,21 @@ class ClassesOnSameClassroomEvaluator(BaseEvaluator):
             #asume que las clases son de 4 horas
             if not st.session_state.entities:
                 raise Exception("No se definieron las entidades")
-            else:
-                commissions = st.session_state.entities["commissions"]
-                count = 0
-                for commission in commissions:
-                    count += (commission.hours / 4) - 1
-                return count 
+            commissions = st.session_state.entities["commissions"]
+            count = 0
+            for commission in commissions:
+                count += (commission.hours / 4) - 1
+            return count 
             
         def maxValue(self):
             if not st.session_state.entities:
                 raise Exception("No se definieron las entidades")
-            else:
-                commissions = st.session_state.entities["commissions"]
-                numberOfClassrooms = len(st.session_state.entities["classrooms"])
-                hoursPerResource = ConfigManager().getConfig()["hours_per_resource"]
-                count = 0
-                for commission in commissions:
-                    count += min(numberOfClassrooms, commission.hours / hoursPerResource ) - 1
-                return count 
+            commissions = st.session_state.entities["commissions"]
+            numberOfClassrooms = len(st.session_state.entities["classrooms"])
+            hoursPerResource = ConfigManager().getConfig()["hours_per_resource"]
+            count = 0
+            for commission in commissions:
+                count += min(numberOfClassrooms, commission.hours / hoursPerResource ) - 1
+            return count 
        
         

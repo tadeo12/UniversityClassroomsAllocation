@@ -5,6 +5,8 @@ from ConfigManager import ConfigManager
 def groupByDayAndCommission(allocation):
         resourcesByDayAndCommission = defaultdict(lambda: defaultdict(list))
         for resource, commission in allocation.items():
+            if commission is None:
+                continue
             resourcesByDayAndCommission[resource.day][commission].append(resource)
         return resourcesByDayAndCommission
 

@@ -5,6 +5,8 @@ from app.Constraints.BaseEvaluator import BaseEvaluator
 def groupByDayAndHour(allocation):
     resourcesByCommission = defaultdict(list)
     for resource, commission in allocation.items():
+        if commission is None:
+            continue
         resourcesByCommission[(resource.day,resource.hour)].append(commission)
     return resourcesByCommission
 
