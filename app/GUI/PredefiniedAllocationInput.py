@@ -39,7 +39,12 @@ def AllocationFileInput():
 
 
         if st.session_state.get("show_allocation"):
-            st.json(st.session_state.initialAllocation)
+            allocation_display = {
+                str(resource): str(commission) 
+                for resource, commission in st.session_state.initialAllocation.items()
+            }
+            st.json(allocation_display)
+
 
 def AllocationJsonInput():
     st.subheader("Ingrese JSON para la distribución predefinida")

@@ -1,14 +1,14 @@
 {
-  "max_iterations": 1,
-  "samples_for_statistics": 1,
+  "max_iterations": 10000000,
+  "samples_for_statistics": 100,
   "hours_per_day": 14,
   "days_per_week": 5,
-  "hours_per_resource": 1.0,
-  "input_data_file_path": "pafoto.json",
+  "hours_per_resource": 2.0,
+  "input_data_file_path": "DCIC-PrimerCuatrimestre2hs.json",
   "penalty_function": "norm",
   "cooling_function": "rational",
   "temperature_reduction_coefficient": 0.9985,
-  "temperature_beta_constant": 1e-07,
+  "temperature_beta_constant": 1e-08,
   "temperature_log_c": 0.1,
-  "initial_temperature": 10000
+  "initial_temperature": 5000
 }

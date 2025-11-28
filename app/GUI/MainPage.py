@@ -3,7 +3,7 @@ from streamlit_ace import st_ace
 import streamlit as st
 import json
 from ConfigManager import ConfigManager
-from app.Logic.EjecutionHandler import ejecutionButtonHandler
+from app.Logic.ExecutionHandler import executionButtonHandler
 from app.Logic.EntititiesInitializer import createEntitiesFromJson
 from app.GUI.EntitiesDataInputInterface import entitiesDataInput
 from app.GUI.PredefiniedAllocationInput import showPredefiniedAllocationInput
@@ -113,7 +113,7 @@ def rigthColumnContent():
         
         initializeGraphsPanel()
         blockUserInteraction()
-        ejecutionButtonHandler(updateProgress)
+        executionButtonHandler(updateProgress)
         st.session_state.progressBar.empty()
         overlayPlaceholder.empty()
         st.success("El algoritmo finalizó")
